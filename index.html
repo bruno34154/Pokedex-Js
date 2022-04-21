@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body onload="getPokemon('1')">
+    <p class="title">POKEDEX</p>
+    <hr width="100%" align="center" size="10" color="yellow" />
+    <div class="container">
+      <div class="card" id="card">
+        <p id="name" class="description"></p>
+        <center><img id="pic" /></center>
+        <div class="org">
+          <div class="information">
+            <div class="orgtype"><p id="Types"></p></div>
+            <div class="tam">
+              <p id="weight" class="orgtype"></p>
+              <p id="height" class="orgtype"></p>
+            </div>
+          </div>
+
+          <div class="status">
+            <p id="base">Base status</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button class="button" onclick="getPokemon('1')">
+          <img src="img//pngwing.com (1).png" class="img" />
+          Bullbasaur
+        </button>
+        <button class="button" onclick="getPokemon('2')">
+          <img src="img//pngwing.com (1).png" class="img" /> Ivisaur
+        </button>
+        <button class="button" onclick="getPokemon('3')">
+          <img src="img//pngwing.com (1).png" class="img" /> Venusaur
+        </button>
+        <button class="button" onclick="getPokemon('4')">
+          <img src="img//pngwing.com (1).png" class="img" /> Charmander
+        </button>
+        <button class="button" onclick="getPokemon('5')">
+          <img src="img//pngwing.com (1).png" class="img" /> Charmeleon
+        </button>
+        <button class="button" onclick="getPokemon('6')">
+          <img src="img//pngwing.com (1).png" class="img" /> Charizard
+        </button>
+        <button class="button" onclick="getPokemon('7')">
+          <img src="img//pngwing.com (1).png" class="img" /> Squirtle
+        </button>
+        <button class="button" onclick="getPokemon('8')">
+          <img src="img//pngwing.com (1).png" class="img" /> Wartotle
+        </button>
+        <button class="button" onclick="getPokemon('9')">
+          <img src="img//pngwing.com (1).png" class="img" /> Blastoise
+        </button>
+        <button class="button" onclick="getPokemon('10')">
+          <img src="img//pngwing.com (1).png" class="img" /> Caterpie
+        </button>
+        <button class="button" onclick="getPokemon('11')">
+          <img src="img//pngwing.com (1).png" class="img" /> Metapod
+        </button>
+        <button class="button" onclick="getPokemon('11')">
+          <img src="img//pngwing.com (1).png" class="img" /> Metapod
+        </button>
+        <button class="button" onclick="getPokemon('12')">
+          <img src="img//pngwing.com (1).png" class="img" /> Butterfree
+        </button>
+        <button class="button" onclick="getPokemon('13')">
+          <img src="img//pngwing.com (1).png" class="img" /> Weedle
+        </button>
+        <button class="button" onclick="getPokemon('14')">
+          <img src="img//pngwing.com (1).png" class="img" /> Kakuna
+        </button>
+        <button class="button" onclick="getPokemon('15')">
+          <img src="img//pngwing.com (1).png" class="img" /> Bedrill
+        </button>
+        <button class="button" onclick="getPokemon('16')">
+          <img src="img//pngwing.com (1).png" class="img" /> Pidgey
+        </button>
+        <button class="button" onclick="getPokemon('17')">
+          <img src="img//pngwing.com (1).png" class="img" /> Pidgeoto
+        </button>
+        <button class="button" onclick="getPokemon('18')">
+          <img src="img//pngwing.com (1).png" class="img" /> Pidgeot
+        </button>
+        <button class="button" onclick="getPokemon('19')">
+          <img src="img//pngwing.com (1).png" class="img" /> Ratata
+        </button>
+        <button class="button" onclick="getPokemon('20')">
+          <img src="img//pngwing.com (1).png" class="img" /> Raticate
+        </button>
+        <button class="button" onclick="getPokemon('21')">
+          <img src="img//pngwing.com (1).png" class="img" /> Spearow
+        </button>
+        <button class="button" onclick="getPokemon('22')">
+          <img src="img//pngwing.com (1).png" class="img" /> Fearow
+        </button>
+        <button class="button" onclick="getPokemon('23')">
+          <img src="img//pngwing.com (1).png" class="img" /> Ekans
+        </button>
+        <button class="button" onclick="getPokemon('24')">
+          <img src="img//pngwing.com (1).png" class="img" /> Arbok
+        </button>
+        <button class="button" onclick="getPokemon('25')">
+          <img src="img//pngwing.com (1).png" class="img" /> Pikachu
+        </button>
+        <button class="button" onclick="getPokemon('26')">
+          <img src="img//pngwing.com (1).png" class="img" /> Raichu
+        </button>
+        <button class="button" onclick="getPokemon('27')">
+          <img src="img//pngwing.com (1).png" class="img" /> Sandshrew
+        </button>
+        <button class="button" onclick="getPokemon('28')">
+          <img src="img//pngwing.com (1).png" class="img" /> Sandslash
+        </button>
+        <button class="button" onclick="getPokemon('29')">
+          <img src="img//pngwing.com (1).png" class="img" /> Nidoran-f
+        </button>
+        <button class="button" onclick="getPokemon('30')">
+          <img src="img//pngwing.com (1).png" class="img" /> Nidorina
+        </button>
+        <button class="button" onclick="getPokemon('31')">
+          <img src="img//pngwing.com (1).png" class="img" /> Nidoqueen
+        </button>
+        <button class="button" onclick="getPokemon('32')">
+          <img src="img//pngwing.com (1).png" class="img" /> Nidoran-m
+        </button>
+        <button class="button" onclick="getPokemon('33')">
+          <img src="img//pngwing.com (1).png" class="img" /> Nidorino
+        </button>
+        <button class="button" onclick="getPokemon('34')">
+          <img src="img//pngwing.com (1).png" class="img" /> Nidoking
+        </button>
+        <button class="button" onclick="getPokemon('35')">
+          <img src="img//pngwing.com (1).png" class="img" /> Clefairy
+        </button>
+        <button class="button" onclick="getPokemon('36')">
+          <img src="img//pngwing.com (1).png" class="img" /> Clefable
+        </button>
+        <button class="button" onclick="getPokemon('37')">
+          <img src="img//pngwing.com (1).png" class="img" />Vulpix
+        </button>
+        <button class="button" onclick="getPokemon('38')">
+          <img src="img//pngwing.com (1).png" class="img" />Ninetales
+        </button>
+        <button class="button" onclick="getPokemon('39')">
+          <img src="img//pngwing.com (1).png" class="img" />Jigglypuff
+        </button>
+        <button class="button" onclick="getPokemon('40')">
+          <img src="img//pngwing.com (1).png" class="img" />Wigglytuff
+        </button>
+        <button class="button" onclick="getPokemon('41')">
+          <img src="img//pngwing.com (1).png" class="img" />Zubat
+        </button>
+        <button class="button" onclick="getPokemon('42')">
+          <img src="img//pngwing.com (1).png" class="img" />Golbat
+        </button>
+        <button class="button" onclick="getPokemon('43')">
+          <img src="img//pngwing.com (1).png" class="img" />Oddish
+        </button>
+        <button class="button" onclick="getPokemon('44')">
+          <img src="img//pngwing.com (1).png" class="img" />Gloom
+        </button>
+        <button class="button" onclick="getPokemon('45')">
+          <img src="img//pngwing.com (1).png" class="img" />Vileplume
+        </button>
+        <button class="button" onclick="getPokemon('46')">
+          <img src="img//pngwing.com (1).png" class="img" />Paras
+        </button>
+        <button class="button" onclick="getPokemon('47')">
+          <img src="img//pngwing.com (1).png" class="img" />Parasect
+        </button>
+        <button class="button" onclick="getPokemon('48')">
+          <img src="img//pngwing.com (1).png" class="img" />Venonat
+        </button>
+        <button class="button" onclick="getPokemon('49')">
+          <img src="img//pngwing.com (1).png" class="img" />Venomoth
+        </button>
+        <button class="button" onclick="getPokemon('50')">
+          <img src="img//pngwing.com (1).png" class="img" />Diglett
+        </button>
+        <button class="button" onclick="getPokemon('51')">
+          <img src="img//pngwing.com (1).png" class="img" />Dugtrio
+        </button>
+        <button class="button" onclick="getPokemon('52')">
+          <img src="img//pngwing.com (1).png" class="img" />Meowth
+        </button>
+        <button class="button" onclick="getPokemon('53')">
+          <img src="img//pngwing.com (1).png" class="img" />Persian
+        </button>
+        <button class="button" onclick="getPokemon('54')">
+          <img src="img//pngwing.com (1).png" class="img" />Psyduck
+        </button>
+        <button class="button" onclick="getPokemon('55')">
+          <img src="img//pngwing.com (1).png" class="img" />Golduck
+        </button>
+        <button class="button" onclick="getPokemon('56')">
+          <img src="img//pngwing.com (1).png" class="img" />Mankey
+        </button>
+        <button class="button" onclick="getPokemon('57')">
+          <img src="img//pngwing.com (1).png" class="img" /> Primeape
+        </button>
+        <button class="button" onclick="getPokemon('58')">
+          <img src="img//pngwing.com (1).png" class="img" />Growlithe
+        </button>
+        <button class="button" onclick="getPokemon('59')">
+          <img src="img//pngwing.com (1).png" class="img" />Arcanine
+        </button>
+        <button class="button" onclick="getPokemon('60')">
+          <img src="img//pngwing.com (1).png" class="img" />Poliwag
+        </button>
+        <button class="button" onclick="getPokemon('61')">
+          <img src="img//pngwing.com (1).png" class="img" />Poliwhirl
+        </button>
+        <button class="button" onclick="getPokemon('62')">
+          <img src="img//pngwing.com (1).png" class="img" />Poliwrath
+        </button>
+        <button class="button" onclick="getPokemon('63')">
+          <img src="img//pngwing.com (1).png" class="img" />Abra
+        </button>
+        <button class="button" onclick="getPokemon('64')">
+          <img src="img//pngwing.com (1).png" class="img" />Kadabra
+        </button>
+        <button class="button" onclick="getPokemon('65')">
+          <img src="img//pngwing.com (1).png" class="img" />Alakazam
+        </button>
+        <button class="button" onclick="getPokemon('66')">
+          <img src="img//pngwing.com (1).png" class="img" />Machop
+        </button>
+        <button class="button" onclick="getPokemon('67')">
+          <img src="img//pngwing.com (1).png" class="img" />Machoke
+        </button>
+        <button class="button" onclick="getPokemon('68')">
+          <img src="img//pngwing.com (1).png" class="img" />Machamp
+        </button>
+        <button class="button" onclick="getPokemon('69')">
+          <img src="img//pngwing.com (1).png" class="img" />Bellsprout
+        </button>
+        <button class="button" onclick="getPokemon('70')">
+          <img src="img//pngwing.com (1).png" class="img" />Weepinbell
+        </button>
+        <button class="button" onclick="getPokemon('71')">
+          <img src="img//pngwing.com (1).png" class="img" />Victreebel
+        </button>
+        <button class="button" onclick="getPokemon('72')">
+          <img src="img//pngwing.com (1).png" class="img" />Tentacool
+        </button>
+        <button class="button" onclick="getPokemon('73')">
+          <img src="img//pngwing.com (1).png" class="img" />Tentacruel
+        </button>
+        <button class="button" onclick="getPokemon('74')">
+          <img src="img//pngwing.com (1).png" class="img" /> Geodude
+        </button>
+        <button class="button" onclick="getPokemon('75')">
+          <img src="img//pngwing.com (1).png" class="img" />Graveler
+        </button>
+        <button class="button" onclick="getPokemon('76')">
+          <img src="img//pngwing.com (1).png" class="img" />Golem
+        </button>
+        <button class="button" onclick="getPokemon('77')">
+          <img src="img//pngwing.com (1).png" class="img" />Ponyta
+        </button>
+        <button class="button" onclick="getPokemon('78')">
+          <img src="img//pngwing.com (1).png" class="img" />Rapidash
+        </button>
+        <button class="button" onclick="getPokemon('79')">
+          <img src="img//pngwing.com (1).png" class="img" />Slowpoke
+        </button>
+        <button class="button" onclick="getPokemon('80')">
+          <img src="img//pngwing.com (1).png" class="img" />Slowbro
+        </button>
+        <button class="button" onclick="getPokemon('81')">
+          <img src="img//pngwing.com (1).png" class="img" />Magnemite
+        </button>
+        <button class="button" onclick="getPokemon('82')">
+          <img src="img//pngwing.com (1).png" class="img" />Magneton
+        </button>
+        <button class="button" onclick="getPokemon('83')">
+          <img src="img//pngwing.com (1).png" class="img" />Farfetchd
+        </button>
+        <button class="button" onclick="getPokemon('84')">
+          <img src="img//pngwing.com (1).png" class="img" />Doduo
+        </button>
+        <button class="button" onclick="getPokemon('85')">
+          <img src="img//pngwing.com (1).png" class="img" />Dodrio
+        </button>
+        <button class="button" onclick="getPokemon('86')">
+          <img src="img//pngwing.com (1).png" class="img" />Seel
+        </button>
+        <button class="button" onclick="getPokemon('87')">
+          <img src="img//pngwing.com (1).png" class="img" />Dewgong
+        </button>
+        <button class="button" onclick="getPokemon('88')">
+          <img src="img//pngwing.com (1).png" class="img" />Grimer
+        </button>
+        <button class="button" onclick="getPokemon('89')">
+          <img src="img//pngwing.com (1).png" class="img" />Muk
+        </button>
+        <button class="button" onclick="getPokemon('90')">
+          <img src="img//pngwing.com (1).png" class="img" />Shellder
+        </button>
+        <button class="button" onclick="getPokemon('91')">
+          <img src="img//pngwing.com (1).png" class="img" />Cloyster
+        </button>
+        <button class="button" onclick="getPokemon('92')">
+          <img src="img//pngwing.com (1).png" class="img" />Gastly
+        </button>
+        <button class="button" onclick="getPokemon('93')">
+          <img src="img//pngwing.com (1).png" class="img" />Haunter
+        </button>
+        <button class="button" onclick="getPokemon('94')">
+          <img src="img//pngwing.com (1).png" class="img" />Gengar
+        </button>
+        <button class="button" onclick="getPokemon('95')">
+          <img src="img//pngwing.com (1).png" class="img" />Onix
+        </button>
+        <button class="button" onclick="getPokemon('96')">
+          <img src="img//pngwing.com (1).png" class="img" />Drowzee
+        </button>
+        <button class="button" onclick="getPokemon('97')">
+          <img src="img//pngwing.com (1).png" class="img" />Hypno
+        </button>
+        <button class="button" onclick="getPokemon('98')">
+          <img src="img//pngwing.com (1).png" class="img" />Krabby
+        </button>
+        <button class="button" onclick="getPokemon('99')">
+          <img src="img//pngwing.com (1).png" class="img" />Kingler
+        </button>
+        <button class="button" onclick="getPokemon('100')">
+          <img src="img//pngwing.com (1).png" class="img" />Voltorb
+        </button>
+        <button class="button" onclick="getPokemon('101')">
+          <img src="img//pngwing.com (1).png" class="img" />Electrode
+        </button>
+        <button class="button" onclick="getPokemon('102')">
+          <img src="img//pngwing.com (1).png" class="img" />Exeggcute
+        </button>
+        <button class="button" onclick="getPokemon('103')">
+          <img src="img//pngwing.com (1).png" class="img" />Exeggutor
+        </button>
+        <button class="button" onclick="getPokemon('104')">
+          <img src="img//pngwing.com (1).png" class="img" />Cubone
+        </button>
+        <button class="button" onclick="getPokemon('105')">
+          <img src="img//pngwing.com (1).png" class="img" />Marowak
+        </button>
+        <button class="button" onclick="getPokemon('106')">
+          <img src="img//pngwing.com (1).png" class="img" />Hitmonlee
+        </button>
+        <button class="button" onclick="getPokemon('107')">
+          <img src="img//pngwing.com (1).png" class="img" />Hitmonchan
+        </button>
+        <button class="button" onclick="getPokemon('108')">
+          <img src="img//pngwing.com (1).png" class="img" />Lickitung
+        </button>
+        <button class="button" onclick="getPokemon('109')">
+          <img src="img//pngwing.com (1).png" class="img" /> Koffing
+        </button>
+        <button class="button" onclick="getPokemon('110')">
+          <img src="img//pngwing.com (1).png" class="img" />Weezing
+        </button>
+        <button class="button" onclick="getPokemon('111')">
+          <img src="img//pngwing.com (1).png" class="img" />Rhyhorn
+        </button>
+        <button class="button" onclick="getPokemon('112')">
+          <img src="img//pngwing.com (1).png" class="img" />Rhydon
+        </button>
+        <button class="button" onclick="getPokemon('113')">
+          <img src="img//pngwing.com (1).png" class="img" />Chansey
+        </button>
+        <button class="button" onclick="getPokemon('114')">
+          <img src="img//pngwing.com (1).png" class="img" />Tangela
+        </button>
+        <button class="button" onclick="getPokemon('115')">
+          <img src="img//pngwing.com (1).png" class="img" />Kangaskhan
+        </button>
+        <button class="button" onclick="getPokemon('116')">
+          <img src="img//pngwing.com (1).png" class="img" />Horsea
+        </button>
+        <button class="button" onclick="getPokemon('117')">
+          <img src="img//pngwing.com (1).png" class="img" />Seadra
+        </button>
+        <button class="button" onclick="getPokemon('118')">
+          <img src="img//pngwing.com (1).png" class="img" />Goldeen
+        </button>
+        <button class="button" onclick="getPokemon('119')">
+          <img src="img//pngwing.com (1).png" class="img" />Seaking
+        </button>
+        <button class="button" onclick="getPokemon('120')">
+          <img src="img//pngwing.com (1).png" class="img" />Staryu
+        </button>
+        <button class="button" onclick="getPokemon('121')">
+          <img src="img//pngwing.com (1).png" class="img" />Starmie
+        </button>
+        <button class="button" onclick="getPokemon('122')">
+          <img src="img//pngwing.com (1).png" class="img" />Mr-mime
+        </button>
+        <button class="button" onclick="getPokemon('123')">
+          <img src="img//pngwing.com (1).png" class="img" />Scyther
+        </button>
+        <button class="button" onclick="getPokemon('124')">
+          <img src="img//pngwing.com (1).png" class="img" />Jynx
+        </button>
+        <button class="button" onclick="getPokemon('125')">
+          <img src="img//pngwing.com (1).png" class="img" />Electabuzz
+        </button>
+        <button class="button" onclick="getPokemon('126')">
+          <img src="img//pngwing.com (1).png" class="img" />Magmar
+        </button>
+        <button class="button" onclick="getPokemon('127')">
+          <img src="img//pngwing.com (1).png" class="img" />Pinsir
+        </button>
+        <button class="button" onclick="getPokemon('128')">
+          <img src="img//pngwing.com (1).png" class="img" />Tauros
+        </button>
+        <button class="button" onclick="getPokemon('129')">
+          <img src="img//pngwing.com (1).png" class="img" />Magikarp
+        </button>
+        <button class="button" onclick="getPokemon('130')">
+          <img src="img//pngwing.com (1).png" class="img" />Gyarados
+        </button>
+        <button class="button" onclick="getPokemon('131')">
+          <img src="img//pngwing.com (1).png" class="img" /> Lapras
+        </button>
+        <button class="button" onclick="getPokemon('132')">
+          <img src="img//pngwing.com (1).png" class="img" />Ditto
+        </button>
+        <button class="button" onclick="getPokemon('133')">
+          <img src="img//pngwing.com (1).png" class="img" />Eevee
+        </button>
+        <button class="button" onclick="getPokemon('134')">
+          <img src="img//pngwing.com (1).png" class="img" />Vaporeon
+        </button>
+        <button class="button" onclick="getPokemon('135')">
+          <img src="img//pngwing.com (1).png" class="img" />Jolteon
+        </button>
+        <button class="button" onclick="getPokemon('136')">
+          <img src="img//pngwing.com (1).png" class="img" />Flareon
+        </button>
+        <button class="button" onclick="getPokemon('137')">
+          <img src="img//pngwing.com (1).png" class="img" />Porygon
+        </button>
+        <button class="button" onclick="getPokemon('138')">
+          <img src="img//pngwing.com (1).png" class="img" />Omanyte
+        </button>
+        <button class="button" onclick="getPokemon('139')">
+          <img src="img//pngwing.com (1).png" class="img" />Omastar
+        </button>
+        <button class="button" onclick="getPokemon('140')">
+          <img src="img//pngwing.com (1).png" class="img" />Kabuto
+        </button>
+        <button class="button" onclick="getPokemon('141')">
+          <img src="img//pngwing.com (1).png" class="img" />Kabutops
+        </button>
+        <button class="button" onclick="getPokemon('142')">
+          <img src="img//pngwing.com (1).png" class="img" />Aerodactyl
+        </button>
+        <button class="button" onclick="getPokemon('143')">
+          <img src="img//pngwing.com (1).png" class="img" />Snorlax
+        </button>
+        <button class="button" onclick="getPokemon('144')">
+          <img src="img//pngwing.com (1).png" class="img" />Zapdos
+        </button>
+        <button class="button" onclick="getPokemon('145')">
+          <img src="img//pngwing.com (1).png" class="img" />Articuno
+        </button>
+        <button class="button" onclick="getPokemon('146')">
+          <img src="img//pngwing.com (1).png" class="img" />Moltres
+        </button>
+        <button class="button" onclick="getPokemon('147')">
+          <img src="img//pngwing.com (1).png" class="img" />Dratini
+        </button>
+        <button class="button" onclick="getPokemon('148')">
+          <img src="img//pngwing.com (1).png" class="img" />Dragonair
+        </button>
+        <button class="button" onclick="getPokemon('149')">
+          <img src="img//pngwing.com (1).png" class="img" /> Dragonite
+        </button>
+        <button class="button" onclick="getPokemon('150')">
+          <img src="img//pngwing.com (1).png" class="img" />Mewtwo
+        </button>
+        <button class="button" onclick="getPokemon('151')">
+          <img src="img//pngwing.com (1).png" class="img" />Mew
+        </button>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
