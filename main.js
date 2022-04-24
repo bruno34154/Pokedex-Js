@@ -22,7 +22,7 @@ const typepoke = [
 ];
 function resetClass() {
   typepoke.forEach((element) => {
-    // pic.classList.remove(element);
+    
     card.classList.remove(element);
   });
 }
@@ -73,7 +73,6 @@ function getPokemon(pokemon) {
 
       pic.setAttribute("src", front_default);
       resetClass();
-      //pic.classList.add(firstType.type.name);
       card.classList.add(firstType.type.name);
     })
     .catch((erro) => {
