@@ -1,6 +1,4 @@
-var chamander = document.getElementById("chamander");
-var bullbasaur = document.getElementById("bullbasaur");
-var squirtle = document.getElementById("squirtle");
+
 const typepoke = [
   "normal",
   "fighting",
